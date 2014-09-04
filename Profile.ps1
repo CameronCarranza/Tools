@@ -61,6 +61,7 @@ set-alias mail "C:\Program Files (x86)\Mozilla Thunderbird\thunderbird.exe"
 set-alias pdqinventory "C:\Program Files (x86)\Admin Arsenal\PDQ Inventory\PDQInventoryConsole.exe"
 set-alias pdqdeploy "C:\Program Files (x86)\Admin Arsenal\PDQ Deploy\PDQDeployConsole.exe"
 set-alias thedude "C:\Program Files (x86)\Dude\dude.exe"
+set-alias switchport_miner "C:\Tools\Executable\SwitchPort Miner\sm.exe"
 
 #Su (Change PS User)
 function su
