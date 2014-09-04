@@ -31,7 +31,11 @@ set-alias change_dns "C:\Tools\Powershell\change_dns.ps1"
 set-alias allow_remoteaccess "C:\Tools\Powershell\allow_remoteaccess.ps1"
 set-alias user_loginlocation "C:\Tools\Powershell\user_loginlocation.ps1"
 set-alias rdp "C:\Tools\Powershell\rdp.ps1"
-
+set-alias ura "C:\Program Files (x86)\Unattended Remote Assistance\URAEXE.exe"
+set-alias notepad "C:\Program Files (x86)\Notepad++\notepad++.exe"
+set-alias browser_history_viewer "C:\Tools\Executable\Nirsoft\BrowsingHistoryView.exe"
+set-alias esxi "C:\Program Files (x86)\VMware\Infrastructure\Virtual Infrastructure Client\Launcher\VpxClient.exe"
+set-alias mail "C:\Program Files (x86)\Mozilla Thunderbird\thunderbird.exe"
 
 #Su (Change PS User)
 function su
