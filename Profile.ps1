@@ -1,3 +1,4 @@
+#In order to auto load this profile (or your own variation), move the Profile.ps1 file to "C:\Windows\System32\WindowsPowerShell\v1.0")
 #Set working directory
 set-location C:\Tools\
 

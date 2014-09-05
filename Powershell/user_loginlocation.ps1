@@ -7,6 +7,8 @@
 ##############################################################################################
 
 Add-PSSnapin Quest.ActiveRoles.ADManagement -ErrorAction SilentlyContinue
+
+
 $ErrorActionPreference = "SilentlyContinue"
 
 # Retrieve Username to search for, error checks to make sure the username
