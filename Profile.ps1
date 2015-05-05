@@ -88,3 +88,21 @@ function uptime
 	$sysuptime = (Get-Date) - [System.Management.ManagementDateTimeconverter]::ToDateTime($lastboottime)
 	Write-Host "$computer has been up for: " $sysuptime.days "days" $sysuptime.hours "hours" $sysuptime.minutes "minutes" $sysuptime.seconds "seconds
 "}
+
+#owexec-gpupdate
+function owexec-gpupdate {
+	if ($args[0]) {
+		$list = get-content $args[0]
+	} else {
+		echo "You need to supply a text file (full path) of computer names or IP addresses separated by <ENTER>"
+		break
+	}
+	
+	if ($list) {
+		Foreach ($item in $list) {
+			owexec -c $item -k gpupdate -nowait
+		}
+	} else {
+		echo "Please supply a valid file with the full path"
+	}
+}
