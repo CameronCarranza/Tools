@@ -3,11 +3,14 @@
 set-location C:\Tools\
 
 #Modules
-Import-Module ActiveDirectory
+#Import-Module ActiveDirectory
 
 #UNIX Prompt
 function prompt {
-"[$env:username@$([System.Net.Dns]::GetHostName())]$ "
+	$userName = $env:username
+	$computerName = $env:computername
+	$curDir = $pwd
+	return "[${userName}@${computerName}] ${curDir}> "
 }
 
 #Tool Aliases
